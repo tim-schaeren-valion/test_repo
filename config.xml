@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<config:entries xmlns:config="http://valion.mulesoft.com/config">
+    <config:entry>
+        <config:jobname>postFinance</config:jobname>
+
+        <config:source_host>local</config:source_host>
+        <config:source_dir>C:\srk_servers\sftp1_postFinance</config:source_dir>
+        <config:source_file_pattern>file</config:source_file_pattern>
+
+        <config:destination_host>local</config:destination_host>
+        <config:destination_dir>C:\srk_servers\destination1_postFinance</config:destination_dir>
+        <config:destination_file_pattern>file</config:destination_file_pattern>
+        
+        <config:archive_yes_no>yes</config:archive_yes_no>
+        <config:archive_dir>C:\srk_servers\archive1_postFinance</config:archive_dir>
+        
+        <config:file_format>.xml</config:file_format>
+        <config:execution_time>04:45</config:execution_time>
+        <config:monitoring_email>tim.schaeren@valion.ch</config:monitoring_email>
+        <config:delete_at_source_yes_no>no</config:delete_at_source_yes_no>
+
+        <config:auth_account>srk</config:auth_account>
+    </config:entry>
+
+    <config:entry>
+        <config:jobname>corris</config:jobname>
+
+        <config:source_host>local</config:source_host>
+        <config:source_dir>C:\srk_servers\sftp2_corris</config:source_dir>
+        <config:source_file_pattern>file</config:source_file_pattern>
+
+        <config:destination_host>local</config:destination_host>
+        <config:destination_dir>C:\srk_servers\destination2_corris</config:destination_dir>
+        <config:destination_file_pattern>file</config:destination_file_pattern>
+        
+        <config:archive_yes_no>yes</config:archive_yes_no>
+        <config:archive_dir>C:\srk_servers\archive2_corris</config:archive_dir>
+
+        <config:file_format>.csv</config:file_format>
+        <config:execution_time>04:45</config:execution_time>
+        <config:monitoring_email>tim.schaeren@valion.ch</config:monitoring_email>
+        <config:delete_at_source_yes_no>yes</config:delete_at_source_yes_no>
+
+        <config:auth_account>srk</config:auth_account>
+    </config:entry>
+
+    <config:entry>
+        <config:jobname>multisource</config:jobname>
+
+        <config:source_host>local</config:source_host>
+        <config:source_dir>C:\srk_servers\sftp3_multisource</config:source_dir>
+        <config:source_file_pattern>file</config:source_file_pattern>
+
+        <config:destination_host>local</config:destination_host>
+        <config:destination_dir>C:\srk_servers\destination3_multisource</config:destination_dir>
+        <config:destination_file_pattern>file</config:destination_file_pattern>
+        
+        <config:archive_yes_no>yes</config:archive_yes_no>
+        <config:archive_dir>C:\srk_servers\archive3_multisource</config:archive_dir>
+
+        <config:file_format>.txt</config:file_format>
+        <config:execution_time>04:45</config:execution_time>
+        <config:monitoring_email>tim.schaeren@valion.ch</config:monitoring_email>
+        <config:delete_at_source_yes_no>yes</config:delete_at_source_yes_no>
+
+        <config:auth_account>srk</config:auth_account>
+    </config:entry>
+
+</config:entries>
